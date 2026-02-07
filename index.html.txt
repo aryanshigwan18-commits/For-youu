@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Mauu 💗</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&family=Inter:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+  <!-- SECTION 1 -->
+  <section class="section">
+    <img class="cat" src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif">
+    <p class="title">Heyyy Mauu</p>
+    <p class="text">
+      I made something new I hope avdel tula 😭<br><br>
+      Just scroll slowlyy
+    </p>
+    <div class="petal" onclick="scrollNext(this)"></div>
+  </section>
+
+  <!-- SECTION 2 -->
+  <section class="section">
+    <img class="cat" src="https://media.giphy.com/media/MDJ9IbxxvDUQM/giphy.gif">
+    <p class="text">
+      Its been long 5 years of friendship and 3 years of relationship 🧿<br><br>
+      Every meet every moment felt special to both of us<br><br>
+      Thodishi bhandana thodasa rusva fugva which is healthy to build bond more strong 🫂🫶🏻
+    </p>
+    <div class="petal" onclick="scrollNext(this)"></div>
+  </section>
+
+  <!-- SECTION 3 -->
+  <section class="section">
+    <img class="cat" src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif">
+    <p class="text">
+      Its all started from your proposal hats off to your confidence 😂💗<br><br>
+      Joke aside but promising you your decision won’t feel you regret 🥹❤️
+    </p>
+    <div class="petal" onclick="scrollNext(this)"></div>
+  </section>
+
+  <!-- QUESTION -->
+  <section class="section">
+    <p class="soft">Even though you’re my Gf still asking</p>
+    <p class="question">WILL YOU BE MY VALENTINE?</p>
+
+    <div class="buttons">
+      <button class="yes" onclick="showGifts()">Yes</button>
+      <button class="no" onclick="showNo()">No</button>
+    </div>
+
+    <p id="noText" class="soft hidden">
+      That’s okay… I just wanted you to know how I feel 🤍
+    </p>
+  </section>
+
+  <!-- GIFTS -->
+  <section id="giftSection" class="section hidden">
+    <p class="title">Choose One 💗</p>
+    <div class="gift-row">
+      <div class="gift" onclick="openGift('flowers')">🌸</div>
+      <div class="gift" onclick="openGift('choco')">🍫</div>
+      <div class="gift" onclick="openGift('bmw')">🚗</div>
+    </div>
+  </section>
+
+  <!-- SHAYRI -->
+  <section id="shayriSection" class="section hidden">
+    <p class="title">For You 💗</p>
+    <p class="shayri">
+      Bina mere zubaan tak aaye,<br>
+      tere dil tak pohach jaye ye iss dil ki aarzi hai,<br>
+      baaki meri jaan teri marzi hai!!!<br><br>
+
+      Dikho khubsurat jitna dikhna hai,<br>
+      par rehna toh tujhe sirf meri hi hai 🫂💗<br><br>
+
+      <strong>Loveee youuuu…!!!! 🥹🫶🏻</strong>
+    </p>
+  </section>
+
+</div>
+
+<!-- GIFT OVERLAY -->
+<div id="giftOverlay" class="overlay hidden">
+  <div class="gift-content">
+    <img id="giftBg">
+    <img id="giftMain">
+    <button id="goAheadBtn" class="go-ahead hidden" onclick="goAhead()">Go Ahead →</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
